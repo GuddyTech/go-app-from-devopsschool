@@ -25,7 +25,7 @@ jobs:
         run: go mod tidy
         
       - name: get
-        run: go get github.com/GuddyTech/go-app-from-devopsschool.git  
+        run: go get -u github.com/google/go-github/v29
         
       - name: Build
         run: go build -v 1.19
