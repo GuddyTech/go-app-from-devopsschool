@@ -27,9 +27,6 @@ jobs:
       - name: get
         run: go get -u github.com/google/go-github/v29
         
-      - name: get2
-        run: go get 1.19  
-        
       - name: Build
         run: go build -v 1.19
 
