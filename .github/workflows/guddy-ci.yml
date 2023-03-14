@@ -21,8 +21,15 @@ jobs:
       - name: init
         run: go mod init test3
         
+      - name: tidy
+        run: go mod tidy
+        
+      - name: get
+        run: go get https://github.com/GuddyTech/go-app-from-devopsschool.git  
+        
       - name: Build
         run: go build -v 1.19
 
       - name: Test
         run: go test -v 1.19
+        
