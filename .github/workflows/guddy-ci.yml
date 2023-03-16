@@ -30,4 +30,4 @@ jobs:
           with:
             name: go-app
         - name: Deploy to staging environment
-          run: |
+        
